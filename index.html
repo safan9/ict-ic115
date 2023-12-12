@@ -1,14 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safwan Bapu | IC 115</title>
+    <title>Pet Doctor - We love pets like you do</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
+
 <body>
-    <h1>IC 115 Web Design & Development</h1>
-    <div>
-        <p>This repo will soon have project developed during this course by Safwan Bapu.</p>
+    <!-- Start: Header & Nav -->
+    <header class="navigation-bar">
+        <a class="logo-a" href="index.html">
+            <img class="logo" src="./images/logo_transparent.png">
+        </a>
+        <nav class="nav" id="nav">
+            <a href="services.html">Services</a>
+            <a href="about-us.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a class="book-now-cta" href="book-appointment.html">Book Now</a>
+            <a href="javascript:void(0);" id="menu-toggle" onclick="togglemenu()">
+                <div class="menu-toggle__bar1"></div>
+                <div class="menu-toggle__bar2"></div>
+                <div class="menu-toggle__bar3"></div>
+            </a>
+        </nav>
+    </header>
+    <!-- End: Header & Nav -->
+
+    <!-- Start: Main Page Area -->
+    <div class="main-content">
+        <section id="banner">
+            <h2 class="banner-title">15% <sup>OFF</sup></h2>
+            <p class="banner-txt banner-text">
+                New patients gets 15% of on any of the services. Call us at (807) 358-0000 to book your appointment.
+            </p>
+            <a class="btn" href="book-appointment.html">Book Now</a>
+        </section>
+        <h2 class="txt-center mt-25">Our Services</h2>
+        <section id="services-container">
+            <div class="service">
+                <h2>Grooming</h2>
+                <p>At Pet Doctor, we're dedicated to keeping your furry family members looking and feeling their best.
+                    Our expert pet groomers offer a range of services, from soothing baths and stylish haircuts to nail
+                    trimming and ear cleaning.</p>
+                <a class="btn" href="services.html">Learn More</a>
+            </div>
+            <div class="service">
+                <h2>Day Care</h2>
+                <p>At Pet Doctor, we understand that your four-legged family members are more than just pets; they're
+                    cherished companions. Our pet daycare services provide a safe, stimulating, and loving environment
+                    for your pets when you can't be with them.</p>
+                <a class="btn" href="services.html">Learn More</a>
+            </div>
+            <div class="service">
+                <h2>Surgery</h2>
+                <p>At Pet Doctor, we understand that sometimes, our beloved pets may require surgical care to lead
+                    happy, healthy lives. Our highly skilled and compassionate veterinary team is here to provide the
+                    best surgical care for your furry family members when they need it most.</p>
+                <a class="btn" href="services.html">Learn More</a>
+            </div>
+        </section>
+        <div class="section s1">
+            <div class="section-content">
+                <h2 class="section-title">Expert Veterinary Care</h2>
+                <p class="section-description">Our team of experienced veterinarians is dedicated to providing top-notch
+                    care for your beloved pets. From routine check-ups to advanced medical treatments, we ensure the
+                    health and happiness of your furry friends.</p>
+                <a href="about-us.html" class="section-cta">Meet Our Team</a>
+            </div>
+            <img src="./images/vet-care-image.jpg" alt="Veterinary Care" class="section-image">
+        </div>
+
+        <div class="section s2">
+            <img src="./images/pet-checkup-image.jpg" alt="Pet Checkup" class="section-image">
+            <div class="section-content">
+                <h2 class="section-title">Comprehensive Pet Checkups</h2>
+                <p class="section-description">At Pet Doctor, we take pride in providing exceptional veterinary care for
+                    your beloved pets. Our team of experienced and compassionate veterinarians is dedicated to ensuring
+                    the health and well-being of your furry family members.</p>
+                <a href="book-appointment.html" class="section-cta">Book an Appointment</a>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="slider-container">
+            <h2 class="txt-center">What our clients say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <blockquote>
+                        <p>
+                            I am incredibly impressed with the quality of service and care provided by this pet care
+                            center. My furry friend always returns happy and healthy after every visit. Thank you for
+                            your exceptional care!
+                        </p>
+                        <p class="author">- Robert Lewandowski</p>
+                    </blockquote>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        <p>
+                            Choosing this pet care service was the best decision I made for my pets. The team is not
+                            only professional but also genuinely caring. They go above and beyond to ensure my pets feel
+                            comfortable and loved. Highly recommended!
+                        </p>
+                        <p class="author">- Jaden Sancho</p>
+                    </blockquote>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        <p>
+                            The dog training program here is outstanding! My unruly pup transformed into a well-behaved
+                            companion. The trainers are patient, knowledgeable, and truly passionate about what they do.
+                            Thank you for the positive change you've brought to our lives.
+                        </p>
+                        <p class="author">- Alicia Keys</p>
+                    </blockquote>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        <p>
+                            Adopting a pet from this center was a heartwarming experience. The staff guided me through
+                            the process, ensuring a seamless transition for my new furry friend. I am grateful for the
+                            love and companionship my adopted pet brings to my home.
+                        </p>
+                        <p class="author">- Emily Davies</p>
+                    </blockquote>
+                </div>
+            </div>
+
+            <p class="slider-nav-controls">
+                <button id="prevBtn" class="slider-nav-btn"></button>
+                <button id="nextBtn" class="slider-nav-btn"></button>
+            </p>
+        </div>
+
     </div>
+    <!-- End: Main Page Area -->
+
+    <!-- Start: Footer -->
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column menu-links">
+                <h3>Menu</h3>
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact-us.html">Contact</a>
+            </div>
+
+            <div class="footer-column social-links">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="htpps://www.facebook.com" target="_blank"><img class="social-icon"
+                                src="./images/icon-facebook.png" alt="Facebook"></a></li>
+                    <li><a href="htpps://www.x.com" target="_blank"><img class="social-icon"
+                                src="./images/icon-twitter.png" alt="Twitter"></a></a></li>
+                    <li><a href="htpps://www.instagram.com" target="_blank"><img class="social-icon"
+                                src="./images/icon-instagram.png" alt="Instagram"></a></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column email-subscription">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form class="subscribe-form">
+                    <input type="email" class="subscribe-input" placeholder="Your Email" required>
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright-line">
+            <small>&copy;
+                <script>document.write(new Date().getFullYear())</script> Pet Doctor. All Rights Reserved.
+            </small>
+        </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <!-- Start: External JS files -->
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

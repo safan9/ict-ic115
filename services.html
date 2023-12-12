@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Pet Doctor - We love pets like you do</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .banner {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        .service-box-container {
+            margin: 0 15%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-box {
+            flex: 0 0 calc(30% - 20px);
+            /* One-third of the available width with some spacing */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .service-icon {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .service-icon img {
+            width: 60px;
+        }
+
+        .service-button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .service-box-container {
+                margin: 0 5%;
+            }
+
+            .service-box {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start: Header & Nav -->
+    <header class="navigation-bar">
+        <a class="logo-a" href="index.html">
+            <img class="logo" src="./images/logo_transparent.png">
+        </a>
+        <nav class="nav" id="nav">
+            <a href="services.html">Services</a>
+            <a href="about-us.html">About Us</a>   
+            <a href="blog.html">Blog</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a class="book-now-cta" href="book-appointment.html">Book Now</a>
+            <a href="javascript:void(0);" id="menu-toggle" onclick="togglemenu()">
+                <div class="menu-toggle__bar1"></div>
+                <div class="menu-toggle__bar2"></div>
+                <div class="menu-toggle__bar3"></div>
+            </a>
+        </nav>
+    </header>
+    <!-- End: Header & Nav -->
+    <div>
+        <img src="./images/services-banner.jpg" alt="Dogs and Cats Banner" class="banner">
+        <h1 class="txt-center">Our Services</h1>
+    </div>
+
+
+    <!-- Start: Main Page Area -->
+    <div class="main-content">
+
+        <div class="service-box-container">
+            <section class="service-box">
+                <span class="service-icon"><img src="./images/icon-grooming.png" alt="Grooming"></span>
+                <h2>Grooming</h2>
+                <p>Experience expert grooming services to keep your pet looking and feeling their best. We offer bathing, brushing, nail trimming, ear cleaning, and personalized styling.</p>
+                <a href="book-appointment.html" class="service-button">Book Now</a>
+            </section>
+            <section class="service-box">
+                <span class="service-icon"><img src="./images/icon-daycare.png" alt="Pet Day Care"></span>
+                <h2>Day Care</h2>
+                <p>Provide your pets with a stimulating and secure environment during your busy day. Our services include socialization, playtime, feeding, and attentive care from our trained staff.</p>
+                <a href="book-appointment.html" class="service-button">Book Now</a>
+            </section>
+            <section class="service-box">
+                <span class="service-icon"><img src="./images/icon-surgery.png" alt="Pet Surgery"></span>
+                <h2>Surgery</h2>
+                <p>Rely on our professional veterinary surgeons for necessary medical procedures. We provide surgical interventions for health issues, injuries, and more.</p>
+                <a href="book-appointment.html" class="service-button">Book Now</a>
+            </section>
+            <section class="service-box">
+                <span class="service-icon"><img src="./images/icon-dog-training.png" alt="Dog Training"></span>
+                <h2>Dog Training</h2>
+                <p>Enroll your canine companion in our obedience training programs for a well-behaved and happy pet. Choose from group classes, private sessions, and specialized programs for all breeds.</p>
+                <a href="book-appointment.html" class="service-button">Book Now</a>
+            </section>
+            <section class="service-box">
+                <span class="service-icon"><img src="./images/icon-adoption.png" alt="Pet Adoption"></span>
+                <h2>Pet Adoption</h2>
+                <p>Find your perfect companion through our adoption services. We offer thorough screening, veterinary care, and counseling for a successful adoption process.</p>
+                <a href="book-appointment.html" class="service-button">Book Now</a>
+            </section>
+            <section class="service-box">
+                <span class="service-icon"><img src="./images/icon-pet-photography.png" alt="Pet Photography"></span>
+                <h2>Pet Photography</h2>
+                <p>We offer professional photography sessions to capture beautiful moments with pets, creating lasting memories for owners.</p>
+                <a href="book-appointment.html" class="service-button">Book Now</a>
+            </section>
+        </div>
+
+    </div>
+    <!-- End: Main Page Area -->
+
+    <!-- Start: Footer -->
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column menu-links">
+                <h3>Menu</h3>
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact-us.html">Contact</a>
+            </div>
+
+            <div class="footer-column social-links">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="htpps://www.facebook.com" target="_blank"><img class="social-icon" src="./images/icon-facebook.png" alt="Facebook"></a></li>
+                    <li><a href="htpps://www.x.com" target="_blank"><img class="social-icon" src="./images/icon-twitter.png" alt="Twitter"></a></a></li>
+                    <li><a href="htpps://www.instagram.com" target="_blank"><img class="social-icon" src="./images/icon-instagram.png" alt="Instagram"></a></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column email-subscription">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form class="subscribe-form">
+                    <input type="email" class="subscribe-input" placeholder="Your Email" required>
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright-line">
+            <small>&copy;
+                <script>document.write(new Date().getFullYear())</script> Pet Doctor. All Rights Reserved.
+            </small>
+        </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <!-- Start: External JS files -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
