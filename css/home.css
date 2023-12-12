@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#banner {
+    min-height: 680px;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.banner-title {
+    width: fit-content;
+    margin: 0;
+    font-size: 58px;
+    position: relative;
+    padding: 90px 0 0 90px;
+}
+
+.banner-text {
+    width: 380px;
+    position: relative;
+    font-size: 26px;
+    padding: 10px 10px 10px 95px;
+    border-radius: 0 15px 15px 0;
+}
+
+.banner-txt {
+    color: #FFFFFF;
+    background-color: #352d2f;
+    opacity: 0.4;
+}
+
+.btn {
+    color: #FFFFFF;
+    background-color: #f13e50;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 25px;
+    margin-left: 5%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#services-container {
+    margin: 0 15%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#services-container div.service {
+    flex: 0 0 calc(30% - 20px);
+    /* One-third of the available width with some spacing */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.service .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+
+.section img, .section .section-content{
+    overflow-x: hidden;
+}
+
+.section.s1 {
+    background: linear-gradient(to right, rgba(40, 50, 85, 0), rgba(40, 50, 85, 1));
+}
+
+.section.s2 {
+    background: linear-gradient(to left, rgba(40, 50, 85, 0), rgba(40, 50, 85, 1));
+}
+
+.section-content {
+    flex: 1;
+    text-align: center;
+}
+
+.section-image {
+    /* width: 45%; */
+    /* height: 50%; */
+    margin: 1rem;
+    background-position: top;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.section-cta {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.section-cta:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .section.s2 {
+        flex-direction: column-reverse;
+        overflow-x: hidden;
+    }
+
+    .section {
+        text-align: center !important;
+    }
+
+    .section-image {
+        margin: 2rem 0 !important;
+    }
+
+    #services-container {
+        margin: 0 5%;
+    }
+
+    #services-container div.service {
+        flex: 1;
+    }
+
+    .section-cta {
+        display: inline-block;
+        margin-top: 30px !important;
+    }
+
+    .banner-title {
+        padding: 90px 0 0 10px;
+    }
+
+    .banner-text {
+        width: 80%;
+        font-size: 18px;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+    }
+
+    .section-content {
+        text-align: left;
+        padding: 15px;
+    }
+}
+
+
+.slider-container {
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.testimonial-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    min-width: 100%;
+}
+
+.testimonial p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.author {
+    font-style: italic;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.slider-nav-controls {
+    text-align: center;
+}
+
+.slider-nav-btn {
+    background-color: transparent;
+    color: #000;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+#prevBtn,
+#nextBtn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#prevBtn::before {
+    content: '\2190';
+    /* Unicode arrow character for left arrow */
+}
+
+#nextBtn::before {
+    content: '\2192';
+    /* Unicode arrow character for right arrow */
+}
+
+blockquote{
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
